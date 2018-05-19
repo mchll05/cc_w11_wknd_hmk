@@ -29,8 +29,8 @@ Collector.prototype.getRecordByTitle = function (title){
 };
 
 Collector.prototype.purchaseARecord = function (){
-  return this.funds.removeFromFunds;
-  return this.records.addRecordToCollection;
+  this.funds.removeFromFunds;
+  this.records.addRecordToCollection;
 };
 
 

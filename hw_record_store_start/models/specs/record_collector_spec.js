@@ -63,8 +63,8 @@ describe('Collector', function() {
     collector.purchaseARecord(record1);
     const actual = collector.funds;
     const actual2 = collector.records.length;
-    assert.strictEqual(actual, collector.removeFromFunds(0));
-    assert.deepStrictEqual(actual2, collector.addRecordToCollection(6));
+    assert.strictEqual(actual, 0);
+    assert.deepStrictEqual(actual2, 5);
   });
 
 });
